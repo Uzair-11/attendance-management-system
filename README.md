@@ -7,7 +7,9 @@
 
 ## 📌 About the Project
 
-The **Attendance Management System** is a lightweight, web-based application designed to help educational institutions or organizations **manage student attendance** efficiently.  
+The **Attendance Management System** is a lightweight, web-based application designed to help educational institutions or organizations **manage student attendance** efficiently.
+
+A simple attendance management system using JavaScript, HTML and CSS.
 
 With this system, users can:
 - Add, edit, and delete student records.
@@ -45,4 +47,4 @@ This project aims to:
 ### ✅ How to Run
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/your-username/attendance-management-system.git
+   git clone https://github.com/Uzair-11/attendance-management-system.git
