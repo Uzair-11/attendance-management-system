@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lecture Setup | Attendance Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- University Header -->
+    <div class="university-header">
+      <img src="noBgColor.png" alt="University Logo" class="university-logo" />
+      <h1>Shaikh Freelancer</h1>
+      <p class="tagline">Personal Attendance Management System</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="student-info.html">Student Info</a>
+      <a href="lecture-setup.html">Mark Attendance</a>
+      <a href="attendance-records.html">View Records</a>
+      <a href="attendance-graph.html">Graph</a>
+      <a href="#" id="logoutBtn" class="logout-link">Logout</a>
+    </nav>
+
+    <div class="card">
+      <h2>Setup Lectures</h2>
+
+      <!-- Selected Student Info -->
+      <div id="student-info" class="student-summary"></div>
+
+      <!-- Lecture Setup Form -->
+      <form id="lecture-form">
+        <div class="form-group">
+          <label for="date">Select Date</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Select Subject</label>
+          <select id="subject" required>
+            <option value="" disabled selected>Select a subject</option>
+            <option value="MERN Stack">MERN Stack</option>
+            <option value="Advanced Java">Advanced Java</option>
+            <option value="ADA">ADA</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Cyber Security">Cyber Security</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="total">Total Lectures</label>
+          <input type="number" id="total" min="1" max="10" value="1" required />
+        </div>
+
+        <div class="form-group">
+          <label for="attended">Lectures Attended</label>
+          <input type="number" id="attended" min="0" max="10" value="1" required />
+        </div>
+
+        <button type="button" id="add-lecture" class="primary-btn">Add Lecture</button>
+      </form>
+
+      <h3 style="margin-top: 30px;">Lectures for Selected Date</h3>
+      <div id="lecture-list" class="lecture-list"></div>
+
+      <button id="save-lectures" class="primary-btn" style="margin-top: 20px;">Save & Continue</button>
+    </div>
+  </div>
+
+  <script src="lecture-setup.js"></script>
+</body>
+</html>

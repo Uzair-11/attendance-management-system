@@ -1,0 +1,239 @@
+/* ------------------------------
+   RESET & BASE
+------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+body {
+  padding: 40px 20px;
+}
+
+/* ------------------------------
+   CONTAINER
+------------------------------ */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* ------------------------------
+   UNIVERSITY HEADER
+------------------------------ */
+
+.university-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.university-logo {
+  max-width: 80px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.university-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.university-header .tagline {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.navbar a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ------------------------------
+   CARD
+------------------------------ */
+
+.card {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ------------------------------
+   FORMS
+------------------------------ */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+
+button,
+.primary-btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover,
+.primary-btn:hover {
+  background: #0056b3;
+}
+
+.danger-btn {
+  background: #e74c3c;
+}
+
+.danger-btn:hover {
+  background: #c0392b;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ------------------------------
+   TABLES & RECORDS
+------------------------------ */
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #ddd;
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.attendance-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.attendance-table tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+.record-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.record-item h3 {
+  margin-bottom: 10px;
+}
+
+.attendance-table td button {
+  margin-right: 8px;
+}
+
+/* ------------------------------
+   LOGOUT LINK
+------------------------------ */
+
+.logout-link {
+  background: #dc3545;
+  color: #fff;
+  padding: 6px 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.logout-link:hover {
+  background: #c82333;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attendance Records | Attendance Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- University Header -->
+    <div class="university-header">
+      <img src="noBgColor.png" alt="University Logo" class="university-logo" />
+      <h1>Shaikh Freelancer</h1>
+      <p class="tagline">Personal Attendance Management System</p>
+    </div>
+
+    <!-- Navbar -->
+    
+    <nav class="navbar">
+      <a href="student-info.html">Student Info</a>
+      <a href="lecture-setup.html">Mark Attendance</a>
+      <a href="attendance-records.html">View Records</a>
+      <a href="attendance-graph.html">Graph</a>
+      <a href="#" id="logoutBtn" class="logout-link">Logout</a>
+    </nav>
+
+    <div class="card">
+      <h2>Attendance Records</h2>
+
+      <div class="form-group">
+        <label for="search-enrollment">Search by Enrollment</label>
+        <input type="text" id="search-enrollment" placeholder="Enter Enrollment Number" />
+        <button id="search-student" class="primary-btn">Search</button>
+        <button id="export-csv" class="primary-btn" style="margin-left: 10px;">Export CSV</button>
+      </div>
+
+      <div id="records-list" class="records-list"></div>
+    </div>
+  </div>
+
+  <script src="attendance-records.js"></script>
+</body>
+</html>

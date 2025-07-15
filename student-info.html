@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Info | Attendance Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- University Header -->
+    <div class="university-header">
+      <img src="noBgColor.png" alt="University Logo" class="university-logo" />
+      <h1>Shaikh Freelancer</h1>
+      <p class="tagline">Personal Attendance Management System</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="student-info.html">Student Info</a>
+      <a href="lecture-setup.html">Mark Attendance</a>
+      <a href="attendance-records.html">View Records</a>
+      <a href="attendance-graph.html">Graph</a>
+      <a href="#" id="logoutBtn" class="logout-link">Logout</a>
+    </nav>
+
+    <!-- Existing Students -->
+    <div class="card">
+      <h2>Manage Students</h2>
+      <table id="student-table" class="attendance-table">
+        <thead>
+          <tr>
+            <th>Enrollment</th>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Division</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="student-list"></tbody>
+      </table>
+    </div>
+
+
+    <!-- Add New Student -->
+    <div class="card">
+      <h2>Add New Student</h2>
+      <form id="student-form" method="post">
+        <div class="form-group">
+          <label for="enrollment">Enrollment Number</label>
+          <input type="text" id="enrollment" required />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="rollno">Roll Number</label>
+          <input type="text" id="rollno" required />
+        </div>
+
+        <div class="form-group">
+          <label for="division">Division</label>
+          <input type="text" id="division" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Contact Number</label>
+          <input type="text" id="contact" required />
+        </div>
+
+        <button type="submit" class="primary-btn">Save & Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="student-info.js"></script>
+</body>
+</html>
